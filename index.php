@@ -19,13 +19,11 @@ $new_text = str_ireplace($input_text, $censured_word, $text);
 
 <body>
     <h2>Testo inserito da variabile:</h2>
-    <p>
-        <?= $text ?>
-    </p>
+    <p><?= $text ?></p>
+    <small>Lunghezza del testo: <?= strlen($text) ?> caratteri</small>
     <h2>Testo con <?= $_GET["input"] ?> censurato:</h2>
-    <p>
-        <?= $new_text ?>
-    </p>
+    <p><?= $new_text ?></p>
+    <small>Lunghezza del testo: <?= strlen($new_text) ?> caratteri</small>
 </body>
 
 </html>
